@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Responsive Portfolio</title>
+  <title>Aswin Portfolio</title>
   <link rel="stylesheet" href="./assets/css/styles.css" />
   <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -387,7 +387,8 @@
           </h2>
           <p class="about_text" data-aos="fade-down" data-aos-delay="450">
             I am a recent Bachelor of Engineering graduate in Computer Science and Engineering, passionate about
-            leveraging technology to solve real-world problems.I am eager to apply my skills in innovative projects. I thrive in
+            leveraging technology to solve real-world problems.I am eager to apply my skills in innovative projects. I
+            thrive in
             collaborative environments and am committed to continuous learning and growth in the ever-evolving tech
             landscape. I am excited to contribute my creativity and technical expertise to impactful projects.
           </p>
@@ -698,7 +699,7 @@
       </div>
       <div class="education-item">
         <h2 class="education-title" data-aos="fade-down">HSC</h2>
-        <p data-aos="fade-down">INSTITUTION: CHRISTURAJA MATRIC HR SECONDARY SCHOOL,MARTHANDAM.</p>  
+        <p data-aos="fade-down">INSTITUTION: CHRISTURAJA MATRIC HR SECONDARY SCHOOL,MARTHANDAM.</p>
         <p data-aos="fade-down">YEAR: 2020</p>
         <p data-aos="fade-down">PERCENTAGE: 68%</p>
       </div>
@@ -746,15 +747,23 @@
 
     <section class="contact section" id="contact">
       <h2 class="section-title" data-aos="fade-down">Contact</h2>
-
       <div class="contact_container bd_grid">
-        <form action="#" class="contact_form">
-          <input type="text" placeholder="Name" class="control_input" data-aos="fade-right" data-aos-delay="250" />
-          <input type="mail" placeholder="Email" class="control_input" data-aos="fade-right" data-aos-delay="300" />
-          <textarea name="" id="" cols="0" rows="10" class="control_input" data-aos="fade-right"
-            data-aos-delay="400"></textarea>
+        <form class="contact_form" action="https://formsubmit.co/aswinas029@gmail.com" method="POST">
+          <input type="text"  name="name" placeholder="Name" class="control_input" data-aos="fade-right" data-aos-delay="250"
+            required />
+          <input type="email" name="email" placeholder="Email"  class="control_input" data-aos="fade-right" data-aos-delay="300"
+            required />
+          <textarea name="message" id="" cols="0" rows="10" class="control_input" data-aos="fade-right"
+            data-aos-delay="400" required></textarea>
 
-          <input type="button" value="Send" class="control_button button" data-aos="fade-right" data-aos-delay="450" />
+          <input type="hidden" name="_captcha" value="false">
+
+          <input type="hidden" name="_template" value="table">
+
+          <input type="hidden" name="_next" value="https://aswinas29.netlify.app/">
+
+          <button input type="submit" class="control_button button" data-aos="fade-right"
+            data-aos-delay="450">Send</button>
         </form>
       </div>
     </section>
