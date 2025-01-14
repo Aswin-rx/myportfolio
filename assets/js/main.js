@@ -26,3 +26,28 @@ function linkAction(){
 }
 
 navLink.forEach(n => n.addEventListener('click', linkAction))
+
+document.getElementById('sendButton').addEventListener('click', function () {
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+    
+      // Basic validation
+      if (!name || !email || !message) {
+        alert('Error: Please fill out all fields.');
+        return;
+      }
+    
+      // Simulating successful message sending
+      const isMessageSent = Math.random() > 0.5; // Simulate success/failure
+    
+      if (isMessageSent) {
+        alert('Message sent successfully!');
+      } else {
+        alert('Error: Message could not be sent.');
+      }
+    });
+function showMessage(platform) {
+  alert(`The ${platform} profile is not available right now. Stay tuned!`);
+}
+ 
